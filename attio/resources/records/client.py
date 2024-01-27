@@ -6,7 +6,6 @@ from json.decoder import JSONDecodeError
 
 from ...core.api_error import ApiError
 from ...core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
-from ...core.jsonable_encoder import jsonable_encoder
 from ...core.remove_none_from_dict import remove_none_from_dict
 from ...errors.bad_request_error import BadRequestError
 from ...errors.not_found_error import NotFoundError
@@ -30,6 +29,7 @@ from .types.post_v_2_objects_object_records_request_data import PostV2ObjectsObj
 from .types.post_v_2_objects_object_records_response import PostV2ObjectsObjectRecordsResponse
 from .types.put_v_2_objects_object_records_request_data import PutV2ObjectsObjectRecordsRequestData
 from .types.put_v_2_objects_object_records_response import PutV2ObjectsObjectRecordsResponse
+import json
 
 try:
     import pydantic as pydantic  # type: ignore
@@ -93,7 +93,7 @@ class RecordsClient:
         _response = self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/objects/{object}/records/query"),
-            json=jsonable_encoder(_request),
+            json=json.dumps(_request),
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -138,7 +138,7 @@ class RecordsClient:
         _response = self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/objects/{object}/records"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -189,7 +189,7 @@ class RecordsClient:
             "PUT",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/objects/{object}/records"),
             params=remove_none_from_dict({"matching_attribute": matching_attribute}),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -311,7 +311,7 @@ class RecordsClient:
         _response = self._client_wrapper.httpx_client.request(
             "PATCH",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/objects/{object}/records/{record_id}"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -491,7 +491,7 @@ class AsyncRecordsClient:
         _response = await self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/objects/{object}/records/query"),
-            json=jsonable_encoder(_request),
+            json=json.dumps(_request),
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -536,7 +536,7 @@ class AsyncRecordsClient:
         _response = await self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/objects/{object}/records"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -587,7 +587,7 @@ class AsyncRecordsClient:
             "PUT",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/objects/{object}/records"),
             params=remove_none_from_dict({"matching_attribute": matching_attribute}),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -709,7 +709,7 @@ class AsyncRecordsClient:
         _response = await self._client_wrapper.httpx_client.request(
             "PATCH",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/objects/{object}/records/{record_id}"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )

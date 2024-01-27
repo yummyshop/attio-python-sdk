@@ -6,7 +6,6 @@ from json.decoder import JSONDecodeError
 
 from ...core.api_error import ApiError
 from ...core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
-from ...core.jsonable_encoder import jsonable_encoder
 from ...errors.bad_request_error import BadRequestError
 from ...errors.not_found_error import NotFoundError
 from .types.delete_v_2_comments_comment_id_response import DeleteV2CommentsCommentIdResponse
@@ -50,7 +49,7 @@ class CommentsClient:
         _response = self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", "v2/comments"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -164,7 +163,7 @@ class AsyncCommentsClient:
         _response = await self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", "v2/comments"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )

@@ -3,7 +3,6 @@
 from .api_error import ApiError
 from .client_wrapper import AsyncClientWrapper, BaseClientWrapper, SyncClientWrapper
 from .datetime_utils import serialize_datetime
-from .jsonable_encoder import jsonable_encoder
 from .remove_none_from_dict import remove_none_from_dict
 
 __all__ = [
@@ -11,7 +10,6 @@ __all__ = [
     "AsyncClientWrapper",
     "BaseClientWrapper",
     "SyncClientWrapper",
-    "jsonable_encoder",
     "remove_none_from_dict",
     "serialize_datetime",
 ]

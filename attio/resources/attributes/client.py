@@ -6,7 +6,6 @@ from json.decoder import JSONDecodeError
 
 from ...core.api_error import ApiError
 from ...core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
-from ...core.jsonable_encoder import jsonable_encoder
 from ...core.remove_none_from_dict import remove_none_from_dict
 from ...errors.bad_request_error import BadRequestError
 from ...errors.conflict_error import ConflictError
@@ -209,7 +208,7 @@ class AttributesClient:
         _response = self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/{target}/{identifier}/attributes"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -335,7 +334,7 @@ class AttributesClient:
             urllib.parse.urljoin(
                 f"{self._client_wrapper.get_base_url()}/", f"v2/{target}/{identifier}/attributes/{attribute}"
             ),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -450,7 +449,7 @@ class AttributesClient:
             urllib.parse.urljoin(
                 f"{self._client_wrapper.get_base_url()}/", f"v2/{target}/{identifier}/attributes/{attribute}/options"
             ),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -519,7 +518,7 @@ class AttributesClient:
                 f"{self._client_wrapper.get_base_url()}/",
                 f"v2/{target}/{identifier}/attributes/{attribute}/options/{option}",
             ),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -638,7 +637,7 @@ class AttributesClient:
             urllib.parse.urljoin(
                 f"{self._client_wrapper.get_base_url()}/", f"v2/{target}/{identifier}/attributes/{attribute}/statuses"
             ),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -709,7 +708,7 @@ class AttributesClient:
                 f"{self._client_wrapper.get_base_url()}/",
                 f"v2/{target}/{identifier}/attributes/{attribute}/statuses/{status}",
             ),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -848,7 +847,7 @@ class AsyncAttributesClient:
         _response = await self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/{target}/{identifier}/attributes"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -974,7 +973,7 @@ class AsyncAttributesClient:
             urllib.parse.urljoin(
                 f"{self._client_wrapper.get_base_url()}/", f"v2/{target}/{identifier}/attributes/{attribute}"
             ),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -1089,7 +1088,7 @@ class AsyncAttributesClient:
             urllib.parse.urljoin(
                 f"{self._client_wrapper.get_base_url()}/", f"v2/{target}/{identifier}/attributes/{attribute}/options"
             ),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -1158,7 +1157,7 @@ class AsyncAttributesClient:
                 f"{self._client_wrapper.get_base_url()}/",
                 f"v2/{target}/{identifier}/attributes/{attribute}/options/{option}",
             ),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -1277,7 +1276,7 @@ class AsyncAttributesClient:
             urllib.parse.urljoin(
                 f"{self._client_wrapper.get_base_url()}/", f"v2/{target}/{identifier}/attributes/{attribute}/statuses"
             ),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -1348,7 +1347,7 @@ class AsyncAttributesClient:
                 f"{self._client_wrapper.get_base_url()}/",
                 f"v2/{target}/{identifier}/attributes/{attribute}/statuses/{status}",
             ),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )

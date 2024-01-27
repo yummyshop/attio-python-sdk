@@ -6,7 +6,6 @@ from json.decoder import JSONDecodeError
 
 from ...core.api_error import ApiError
 from ...core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
-from ...core.jsonable_encoder import jsonable_encoder
 from ...core.remove_none_from_dict import remove_none_from_dict
 from ...errors.not_found_error import NotFoundError
 from .types.delete_v_2_notes_note_id_response import DeleteV2NotesNoteIdResponse
@@ -108,7 +107,7 @@ class NotesClient:
         _response = self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", "v2/notes"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -275,7 +274,7 @@ class AsyncNotesClient:
         _response = await self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", "v2/notes"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )

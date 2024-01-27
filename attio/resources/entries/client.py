@@ -6,7 +6,6 @@ from json.decoder import JSONDecodeError
 
 from ...core.api_error import ApiError
 from ...core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
-from ...core.jsonable_encoder import jsonable_encoder
 from ...core.remove_none_from_dict import remove_none_from_dict
 from ...errors.bad_request_error import BadRequestError
 from ...errors.not_found_error import NotFoundError
@@ -25,6 +24,7 @@ from .types.put_v_2_lists_list_entries_entry_id_request_data import PutV2ListsLi
 from .types.put_v_2_lists_list_entries_entry_id_response import PutV2ListsListEntriesEntryIdResponse
 from .types.put_v_2_lists_list_entries_request_data import PutV2ListsListEntriesRequestData
 from .types.put_v_2_lists_list_entries_response import PutV2ListsListEntriesResponse
+import json
 
 try:
     import pydantic as pydantic  # type: ignore
@@ -88,7 +88,7 @@ class EntriesClient:
         _response = self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries/query"),
-            json=jsonable_encoder(_request),
+            json=json.dumps(_request),
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -133,7 +133,7 @@ class EntriesClient:
         _response = self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -180,7 +180,7 @@ class EntriesClient:
         _response = self._client_wrapper.httpx_client.request(
             "PUT",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -265,7 +265,7 @@ class EntriesClient:
         _response = self._client_wrapper.httpx_client.request(
             "PUT",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries/{entry_id}"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -350,7 +350,7 @@ class EntriesClient:
         _response = self._client_wrapper.httpx_client.request(
             "PATCH",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries/{entry_id}"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -484,7 +484,7 @@ class AsyncEntriesClient:
         _response = await self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries/query"),
-            json=jsonable_encoder(_request),
+            json=json.dumps(_request),
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -529,7 +529,7 @@ class AsyncEntriesClient:
         _response = await self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -576,7 +576,7 @@ class AsyncEntriesClient:
         _response = await self._client_wrapper.httpx_client.request(
             "PUT",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -661,7 +661,7 @@ class AsyncEntriesClient:
         _response = await self._client_wrapper.httpx_client.request(
             "PUT",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries/{entry_id}"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -746,7 +746,7 @@ class AsyncEntriesClient:
         _response = await self._client_wrapper.httpx_client.request(
             "PATCH",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries/{entry_id}"),
-            json=jsonable_encoder({"data": data}),
+            json={"data": data.model_dump_json()},
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
