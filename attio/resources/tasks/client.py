@@ -57,9 +57,9 @@ class TasksClient:
 
             - is_completed: typing.Optional[bool].
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.tasks.list_tasks(
@@ -106,9 +106,9 @@ class TasksClient:
             - data: PostV2TasksRequestData.
         ---
         from attio import PostV2TasksRequestData
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.tasks.create_a_task(
@@ -150,9 +150,9 @@ class TasksClient:
         Parameters:
             - task_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.tasks.get_a_task(
@@ -184,9 +184,9 @@ class TasksClient:
         Parameters:
             - task_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.tasks.delete_a_task(
@@ -242,9 +242,9 @@ class AsyncTasksClient:
 
             - is_completed: typing.Optional[bool].
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.tasks.list_tasks(
@@ -291,9 +291,9 @@ class AsyncTasksClient:
             - data: PostV2TasksRequestData.
         ---
         from attio import PostV2TasksRequestData
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.tasks.create_a_task(
@@ -335,9 +335,9 @@ class AsyncTasksClient:
         Parameters:
             - task_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.tasks.get_a_task(
@@ -369,9 +369,9 @@ class AsyncTasksClient:
         Parameters:
             - task_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.tasks.delete_a_task(

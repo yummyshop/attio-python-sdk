@@ -44,9 +44,9 @@ class WebhooksClient:
 
             - offset: typing.Optional[int].
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.webhooks.list_webhooks(
@@ -83,9 +83,9 @@ class WebhooksClient:
             PostV2WebhooksRequestDataSubscriptionsItem,
             PostV2WebhooksRequestDataSubscriptionsItemEventType,
         )
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.webhooks.create_a_webhook(
@@ -125,9 +125,9 @@ class WebhooksClient:
         Parameters:
             - webhook_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.webhooks.get_a_webhook(
@@ -159,9 +159,9 @@ class WebhooksClient:
         Parameters:
             - webhook_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.webhooks.delete_a_webhook(
@@ -202,9 +202,9 @@ class WebhooksClient:
             PatchV2WebhooksWebhookIdRequestDataSubscriptionsItem,
             PatchV2WebhooksWebhookIdRequestDataSubscriptionsItemEventType,
         )
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.webhooks.update_a_webhook(
@@ -254,9 +254,9 @@ class AsyncWebhooksClient:
 
             - offset: typing.Optional[int].
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.webhooks.list_webhooks(
@@ -293,9 +293,9 @@ class AsyncWebhooksClient:
             PostV2WebhooksRequestDataSubscriptionsItem,
             PostV2WebhooksRequestDataSubscriptionsItemEventType,
         )
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.webhooks.create_a_webhook(
@@ -335,9 +335,9 @@ class AsyncWebhooksClient:
         Parameters:
             - webhook_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.webhooks.get_a_webhook(
@@ -369,9 +369,9 @@ class AsyncWebhooksClient:
         Parameters:
             - webhook_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.webhooks.delete_a_webhook(
@@ -412,9 +412,9 @@ class AsyncWebhooksClient:
             PatchV2WebhooksWebhookIdRequestDataSubscriptionsItem,
             PatchV2WebhooksWebhookIdRequestDataSubscriptionsItemEventType,
         )
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.webhooks.update_a_webhook(

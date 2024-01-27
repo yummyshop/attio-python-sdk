@@ -38,9 +38,9 @@ class ListsClient:
         Required scopes: `list_configuration:read`.
 
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.lists.list_all_lists()
@@ -80,9 +80,9 @@ class ListsClient:
             PostV2ListsRequestDataWorkspaceMemberAccessItem,
             PostV2ListsRequestDataWorkspaceMemberAccessItemLevel,
         )
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.lists.create_a_list(
@@ -130,9 +130,9 @@ class ListsClient:
         Parameters:
             - list: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.lists.get_a_list(
@@ -172,9 +172,9 @@ class ListsClient:
             PatchV2ListsListRequestDataWorkspaceMemberAccessItem,
             PatchV2ListsListRequestDataWorkspaceMemberAccessItemLevel,
         )
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.lists.update_a_list(
@@ -223,9 +223,9 @@ class AsyncListsClient:
         Required scopes: `list_configuration:read`.
 
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.lists.list_all_lists()
@@ -265,9 +265,9 @@ class AsyncListsClient:
             PostV2ListsRequestDataWorkspaceMemberAccessItem,
             PostV2ListsRequestDataWorkspaceMemberAccessItemLevel,
         )
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.lists.create_a_list(
@@ -315,9 +315,9 @@ class AsyncListsClient:
         Parameters:
             - list: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.lists.get_a_list(
@@ -357,9 +357,9 @@ class AsyncListsClient:
             PatchV2ListsListRequestDataWorkspaceMemberAccessItem,
             PatchV2ListsListRequestDataWorkspaceMemberAccessItemLevel,
         )
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.lists.update_a_list(

@@ -50,9 +50,9 @@ class NotesClient:
 
             - parent_record_id: typing.Optional[str].
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.notes.list_notes(
@@ -93,9 +93,9 @@ class NotesClient:
             - data: PostV2NotesRequestData.
         ---
         from attio import PostV2NotesRequestData
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(token="YOUR_TOKEN", )
+        client = AttioClient(token="YOUR_TOKEN", )
         client.notes.create_a_note(data=PostV2NotesRequestData(parent_object="people", parent_record_id="891dcbfc-9141-415d-9b2a-2238a6cc012d", title="Initial Prospecting Call Summary", format="plaintext", content="Introduction
         Date and time of the call
         Participants
@@ -131,9 +131,9 @@ class NotesClient:
         Parameters:
             - note_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.notes.get_a_note(
@@ -165,9 +165,9 @@ class NotesClient:
         Parameters:
             - note_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.notes.delete_a_note(
@@ -217,9 +217,9 @@ class AsyncNotesClient:
 
             - parent_record_id: typing.Optional[str].
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.notes.list_notes(
@@ -260,9 +260,9 @@ class AsyncNotesClient:
             - data: PostV2NotesRequestData.
         ---
         from attio import PostV2NotesRequestData
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(token="YOUR_TOKEN", )
+        client = AsyncAttioClient(token="YOUR_TOKEN", )
         await client.notes.create_a_note(data=PostV2NotesRequestData(parent_object="people", parent_record_id="891dcbfc-9141-415d-9b2a-2238a6cc012d", title="Initial Prospecting Call Summary", format="plaintext", content="Introduction
         Date and time of the call
         Participants
@@ -298,9 +298,9 @@ class AsyncNotesClient:
         Parameters:
             - note_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.notes.get_a_note(
@@ -332,9 +332,9 @@ class AsyncNotesClient:
         Parameters:
             - note_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.notes.delete_a_note(

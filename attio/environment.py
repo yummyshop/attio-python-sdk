@@ -3,5 +3,5 @@
 import enum
 
 
-class attio_apiEnvironment(enum.Enum):
+class AttioClientEnvironment(enum.Enum):
     PRODUCTION = "https://api.attio.com"

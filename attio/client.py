@@ -5,7 +5,7 @@ import typing
 import httpx
 
 from .core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
-from .environment import attio_apiEnvironment
+from .environment import AttioClientEnvironment
 from .resources.attributes.client import AsyncAttributesClient, AttributesClient
 from .resources.comments.client import AsyncCommentsClient, CommentsClient
 from .resources.entries.client import AsyncEntriesClient, EntriesClient
@@ -20,12 +20,12 @@ from .resources.webhooks.client import AsyncWebhooksClient, WebhooksClient
 from .resources.workspace_members.client import AsyncWorkspaceMembersClient, WorkspaceMembersClient
 
 
-class attio_api:
+class AttioClient:
     def __init__(
         self,
         *,
         base_url: typing.Optional[str] = None,
-        environment: attio_apiEnvironment = attio_apiEnvironment.PRODUCTION,
+        environment: AttioClientEnvironment = AttioClientEnvironment.PRODUCTION,
         token: typing.Union[str, typing.Callable[[], str]],
         timeout: typing.Optional[float] = 60,
         httpx_client: typing.Optional[httpx.Client] = None
@@ -49,12 +49,12 @@ class attio_api:
         self.meta = MetaClient(client_wrapper=self._client_wrapper)
 
 
-class Asyncattio_api:
+class AsyncAttioClient:
     def __init__(
         self,
         *,
         base_url: typing.Optional[str] = None,
-        environment: attio_apiEnvironment = attio_apiEnvironment.PRODUCTION,
+        environment: AttioClientEnvironment = AttioClientEnvironment.PRODUCTION,
         token: typing.Union[str, typing.Callable[[], str]],
         timeout: typing.Optional[float] = 60,
         httpx_client: typing.Optional[httpx.AsyncClient] = None
@@ -78,7 +78,7 @@ class Asyncattio_api:
         self.meta = AsyncMetaClient(client_wrapper=self._client_wrapper)
 
 
-def _get_base_url(*, base_url: typing.Optional[str] = None, environment: attio_apiEnvironment) -> str:
+def _get_base_url(*, base_url: typing.Optional[str] = None, environment: AttioClientEnvironment) -> str:
     if base_url is not None:
         return base_url
     elif environment is not None:

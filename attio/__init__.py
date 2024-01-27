@@ -1387,7 +1387,7 @@ from .resources import (
     webhooks,
     workspace_members,
 )
-from .environment import attio_apiEnvironment
+from .environment import AttioClientEnvironment
 
 __all__ = [
     "Attribute",
@@ -2764,7 +2764,7 @@ __all__ = [
     "WorkspaceMember",
     "WorkspaceMemberAccessLevel",
     "WorkspaceMemberId",
-    "attio_apiEnvironment",
+    "AttioClientEnvironment",
     "attributes",
     "comments",
     "entries",

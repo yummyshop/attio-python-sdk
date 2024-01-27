@@ -64,9 +64,9 @@ class EntriesClient:
 
             - offset: typing.Optional[float]. The number of results to skip over before returning. Defaults to 0. See the [full guide to pagination here](/docs/pagination).
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.entries.list_entries(
@@ -116,9 +116,9 @@ class EntriesClient:
             - data: PostV2ListsListEntriesRequestData.
         ---
         from attio import PostV2ListsListEntriesRequestData
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.entries.create_an_entry_add_record_to_list(
@@ -163,9 +163,9 @@ class EntriesClient:
             - data: PutV2ListsListEntriesRequestData.
         ---
         from attio import PutV2ListsListEntriesRequestData
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.entries.assert_a_list_entry_by_parent(
@@ -207,9 +207,9 @@ class EntriesClient:
 
             - entry_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.entries.get_a_list_entry(
@@ -249,9 +249,9 @@ class EntriesClient:
             - data: PutV2ListsListEntriesEntryIdRequestData.
         ---
         from attio import PutV2ListsListEntriesEntryIdRequestData
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.entries.update_a_list_entry_overwrite_multiselect_values(
@@ -292,9 +292,9 @@ class EntriesClient:
 
             - entry_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.entries.delete_a_list_entry(
@@ -334,9 +334,9 @@ class EntriesClient:
             - data: PatchV2ListsListEntriesEntryIdRequestData.
         ---
         from attio import PatchV2ListsListEntriesEntryIdRequestData
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.entries.update_a_list_entry_append_multiselect_values(
@@ -394,9 +394,9 @@ class EntriesClient:
 
             - offset: typing.Optional[int].
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.entries.list_attribute_values_for_a_list_entry(
@@ -460,9 +460,9 @@ class AsyncEntriesClient:
 
             - offset: typing.Optional[float]. The number of results to skip over before returning. Defaults to 0. See the [full guide to pagination here](/docs/pagination).
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.entries.list_entries(
@@ -512,9 +512,9 @@ class AsyncEntriesClient:
             - data: PostV2ListsListEntriesRequestData.
         ---
         from attio import PostV2ListsListEntriesRequestData
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.entries.create_an_entry_add_record_to_list(
@@ -559,9 +559,9 @@ class AsyncEntriesClient:
             - data: PutV2ListsListEntriesRequestData.
         ---
         from attio import PutV2ListsListEntriesRequestData
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.entries.assert_a_list_entry_by_parent(
@@ -603,9 +603,9 @@ class AsyncEntriesClient:
 
             - entry_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.entries.get_a_list_entry(
@@ -645,9 +645,9 @@ class AsyncEntriesClient:
             - data: PutV2ListsListEntriesEntryIdRequestData.
         ---
         from attio import PutV2ListsListEntriesEntryIdRequestData
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.entries.update_a_list_entry_overwrite_multiselect_values(
@@ -688,9 +688,9 @@ class AsyncEntriesClient:
 
             - entry_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.entries.delete_a_list_entry(
@@ -730,9 +730,9 @@ class AsyncEntriesClient:
             - data: PatchV2ListsListEntriesEntryIdRequestData.
         ---
         from attio import PatchV2ListsListEntriesEntryIdRequestData
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.entries.update_a_list_entry_append_multiselect_values(
@@ -790,9 +790,9 @@ class AsyncEntriesClient:
 
             - offset: typing.Optional[int].
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.entries.list_attribute_values_for_a_list_entry(

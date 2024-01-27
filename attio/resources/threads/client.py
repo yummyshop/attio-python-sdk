@@ -53,9 +53,9 @@ class ThreadsClient:
 
             - offset: typing.Optional[int].
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.threads.list_threads(
@@ -104,9 +104,9 @@ class ThreadsClient:
         Parameters:
             - thread_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.threads.get_a_thread(
@@ -166,9 +166,9 @@ class AsyncThreadsClient:
 
             - offset: typing.Optional[int].
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.threads.list_threads(
@@ -217,9 +217,9 @@ class AsyncThreadsClient:
         Parameters:
             - thread_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.threads.get_a_thread(

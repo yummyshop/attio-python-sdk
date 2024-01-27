@@ -119,9 +119,9 @@ class AttributesClient:
             - show_archived: typing.Optional[bool].
         ---
         from attio import GetV2TargetIdentifierAttributesRequestTarget
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.attributes.list_attributes(
@@ -178,9 +178,9 @@ class AttributesClient:
             PostV2TargetIdentifierAttributesRequestDataType,
             PostV2TargetIdentifierAttributesRequestTarget,
         )
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.attributes.create_an_attribute(
@@ -243,9 +243,9 @@ class AttributesClient:
             - attribute: str.
         ---
         from attio import GetV2TargetIdentifierAttributesAttributeRequestTarget
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.attributes.get_an_attribute(
@@ -303,9 +303,9 @@ class AttributesClient:
             PatchV2TargetIdentifierAttributesAttributeRequestDataConfigRecordReference,
             PatchV2TargetIdentifierAttributesAttributeRequestTarget,
         )
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.attributes.update_an_attribute(
@@ -374,9 +374,9 @@ class AttributesClient:
             - show_archived: typing.Optional[bool].
         ---
         from attio import GetV2TargetIdentifierAttributesAttributeOptionsRequestTarget
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.attributes.list_select_options(
@@ -431,9 +431,9 @@ class AttributesClient:
             PostV2TargetIdentifierAttributesAttributeOptionsRequestData,
             PostV2TargetIdentifierAttributesAttributeOptionsRequestTarget,
         )
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.attributes.create_a_select_option(
@@ -497,9 +497,9 @@ class AttributesClient:
             PatchV2TargetIdentifierAttributesAttributeOptionsOptionRequestData,
             PatchV2TargetIdentifierAttributesAttributeOptionsOptionRequestTarget,
         )
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.attributes.update_a_select_option(
@@ -560,9 +560,9 @@ class AttributesClient:
             - show_archived: typing.Optional[bool].
         ---
         from attio import GetV2TargetIdentifierAttributesAttributeStatusesRequestTarget
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.attributes.list_statuses(
@@ -617,9 +617,9 @@ class AttributesClient:
             PostV2TargetIdentifierAttributesAttributeStatusesRequestData,
             PostV2TargetIdentifierAttributesAttributeStatusesRequestTarget,
         )
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.attributes.create_a_status(
@@ -685,9 +685,9 @@ class AttributesClient:
             PatchV2TargetIdentifierAttributesAttributeStatusesStatusRequestData,
             PatchV2TargetIdentifierAttributesAttributeStatusesStatusRequestTarget,
         )
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.attributes.update_a_status(
@@ -758,9 +758,9 @@ class AsyncAttributesClient:
             - show_archived: typing.Optional[bool].
         ---
         from attio import GetV2TargetIdentifierAttributesRequestTarget
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.attributes.list_attributes(
@@ -817,9 +817,9 @@ class AsyncAttributesClient:
             PostV2TargetIdentifierAttributesRequestDataType,
             PostV2TargetIdentifierAttributesRequestTarget,
         )
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.attributes.create_an_attribute(
@@ -882,9 +882,9 @@ class AsyncAttributesClient:
             - attribute: str.
         ---
         from attio import GetV2TargetIdentifierAttributesAttributeRequestTarget
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.attributes.get_an_attribute(
@@ -942,9 +942,9 @@ class AsyncAttributesClient:
             PatchV2TargetIdentifierAttributesAttributeRequestDataConfigRecordReference,
             PatchV2TargetIdentifierAttributesAttributeRequestTarget,
         )
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.attributes.update_an_attribute(
@@ -1013,9 +1013,9 @@ class AsyncAttributesClient:
             - show_archived: typing.Optional[bool].
         ---
         from attio import GetV2TargetIdentifierAttributesAttributeOptionsRequestTarget
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.attributes.list_select_options(
@@ -1070,9 +1070,9 @@ class AsyncAttributesClient:
             PostV2TargetIdentifierAttributesAttributeOptionsRequestData,
             PostV2TargetIdentifierAttributesAttributeOptionsRequestTarget,
         )
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.attributes.create_a_select_option(
@@ -1136,9 +1136,9 @@ class AsyncAttributesClient:
             PatchV2TargetIdentifierAttributesAttributeOptionsOptionRequestData,
             PatchV2TargetIdentifierAttributesAttributeOptionsOptionRequestTarget,
         )
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.attributes.update_a_select_option(
@@ -1199,9 +1199,9 @@ class AsyncAttributesClient:
             - show_archived: typing.Optional[bool].
         ---
         from attio import GetV2TargetIdentifierAttributesAttributeStatusesRequestTarget
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.attributes.list_statuses(
@@ -1256,9 +1256,9 @@ class AsyncAttributesClient:
             PostV2TargetIdentifierAttributesAttributeStatusesRequestData,
             PostV2TargetIdentifierAttributesAttributeStatusesRequestTarget,
         )
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.attributes.create_a_status(
@@ -1324,9 +1324,9 @@ class AsyncAttributesClient:
             PatchV2TargetIdentifierAttributesAttributeStatusesStatusRequestData,
             PatchV2TargetIdentifierAttributesAttributeStatusesStatusRequestTarget,
         )
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.attributes.update_a_status(

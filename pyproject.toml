@@ -12,10 +12,11 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-include = [ "LICENSE.txt", "README.md"]
+include = [ "LICENSE.txt", "README.md", "attio/py.typed"]
 packages = [
-    { include = "python" },
+    { include = "attio" },
 ]
+include_package_data = true
 
 [tool.poetry.dependencies]
 python = "^3.8"

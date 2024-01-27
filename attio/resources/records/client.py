@@ -69,9 +69,9 @@ class RecordsClient:
 
             - offset: typing.Optional[float]. The number of results to skip over before returning. Defaults to 0. See the [full guide to pagination here](/docs/pagination).
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.records.list_records(
@@ -123,9 +123,9 @@ class RecordsClient:
             - data: PostV2ObjectsObjectRecordsRequestData.
         ---
         from attio import PostV2ObjectsObjectRecordsRequestData
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.records.create_a_record(
@@ -172,9 +172,9 @@ class RecordsClient:
             - data: PutV2ObjectsObjectRecordsRequestData.
         ---
         from attio import PutV2ObjectsObjectRecordsRequestData
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.records.assert_a_record(
@@ -216,9 +216,9 @@ class RecordsClient:
 
             - record_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.records.get_a_record(
@@ -253,9 +253,9 @@ class RecordsClient:
 
             - record_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.records.delete_a_record(
@@ -295,9 +295,9 @@ class RecordsClient:
             - data: PatchV2ObjectsObjectRecordsRecordIdRequestData.
         ---
         from attio import PatchV2ObjectsObjectRecordsRecordIdRequestData
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.records.update_a_record(
@@ -355,9 +355,9 @@ class RecordsClient:
 
             - offset: typing.Optional[int].
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.records.list_record_attribute_values(
@@ -408,9 +408,9 @@ class RecordsClient:
 
             - offset: typing.Optional[int].
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.records.list_record_entries(
@@ -467,9 +467,9 @@ class AsyncRecordsClient:
 
             - offset: typing.Optional[float]. The number of results to skip over before returning. Defaults to 0. See the [full guide to pagination here](/docs/pagination).
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.records.list_records(
@@ -521,9 +521,9 @@ class AsyncRecordsClient:
             - data: PostV2ObjectsObjectRecordsRequestData.
         ---
         from attio import PostV2ObjectsObjectRecordsRequestData
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.records.create_a_record(
@@ -570,9 +570,9 @@ class AsyncRecordsClient:
             - data: PutV2ObjectsObjectRecordsRequestData.
         ---
         from attio import PutV2ObjectsObjectRecordsRequestData
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.records.assert_a_record(
@@ -614,9 +614,9 @@ class AsyncRecordsClient:
 
             - record_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.records.get_a_record(
@@ -651,9 +651,9 @@ class AsyncRecordsClient:
 
             - record_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.records.delete_a_record(
@@ -693,9 +693,9 @@ class AsyncRecordsClient:
             - data: PatchV2ObjectsObjectRecordsRecordIdRequestData.
         ---
         from attio import PatchV2ObjectsObjectRecordsRecordIdRequestData
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.records.update_a_record(
@@ -753,9 +753,9 @@ class AsyncRecordsClient:
 
             - offset: typing.Optional[int].
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.records.list_record_attribute_values(
@@ -806,9 +806,9 @@ class AsyncRecordsClient:
 
             - offset: typing.Optional[int].
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.records.list_record_entries(

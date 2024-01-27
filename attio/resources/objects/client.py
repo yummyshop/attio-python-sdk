@@ -37,9 +37,9 @@ class ObjectsClient:
         Required scopes: `object_configuration:read`.
 
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.objects.list_objects()
@@ -68,9 +68,9 @@ class ObjectsClient:
             - data: PostV2ObjectsRequestData.
         ---
         from attio import PostV2ObjectsRequestData
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.objects.create_an_object(
@@ -107,9 +107,9 @@ class ObjectsClient:
         Parameters:
             - object: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.objects.get_an_object(
@@ -144,9 +144,9 @@ class ObjectsClient:
             - data: PatchV2ObjectsObjectRequestData.
         ---
         from attio import PatchV2ObjectsObjectRequestData
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.objects.update_an_object(
@@ -191,9 +191,9 @@ class AsyncObjectsClient:
         Required scopes: `object_configuration:read`.
 
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.objects.list_objects()
@@ -222,9 +222,9 @@ class AsyncObjectsClient:
             - data: PostV2ObjectsRequestData.
         ---
         from attio import PostV2ObjectsRequestData
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.objects.create_an_object(
@@ -261,9 +261,9 @@ class AsyncObjectsClient:
         Parameters:
             - object: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.objects.get_an_object(
@@ -300,9 +300,9 @@ class AsyncObjectsClient:
             - data: PatchV2ObjectsObjectRequestData.
         ---
         from attio import PatchV2ObjectsObjectRequestData
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.objects.update_an_object(

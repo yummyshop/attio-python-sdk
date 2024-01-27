@@ -6,9 +6,9 @@ groups:
         version: 0.8.0
         config:
           skip_formatting: false
-          client_class_name: attio_api
+          client_class_name: AttioClient
           pydantic_config:
             version: v2
         output:
           location: local-file-system
-          path: ../python
+          path: ../attio

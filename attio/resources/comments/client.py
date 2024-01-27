@@ -40,9 +40,9 @@ class CommentsClient:
         Parameters:
             - data: PostV2CommentsRequestData.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.comments.create_a_comment()
@@ -77,9 +77,9 @@ class CommentsClient:
         Parameters:
             - comment_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.comments.get_a_comment(
@@ -111,9 +111,9 @@ class CommentsClient:
         Parameters:
             - comment_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.comments.delete_a_comment(
@@ -154,9 +154,9 @@ class AsyncCommentsClient:
         Parameters:
             - data: PostV2CommentsRequestData.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.comments.create_a_comment()
@@ -191,9 +191,9 @@ class AsyncCommentsClient:
         Parameters:
             - comment_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.comments.get_a_comment(
@@ -225,9 +225,9 @@ class AsyncCommentsClient:
         Parameters:
             - comment_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.comments.delete_a_comment(

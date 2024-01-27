@@ -27,9 +27,9 @@ class WorkspaceMembersClient:
         Required scopes: `user_management:read`.
 
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.workspace_members.list_workspace_members()
@@ -57,9 +57,9 @@ class WorkspaceMembersClient:
         Parameters:
             - workspace_member_id: str.
         ---
-        from attio.client import attio_api
+        from attio.client import AttioClient
 
-        client = attio_api(
+        client = AttioClient(
             token="YOUR_TOKEN",
         )
         client.workspace_members.get_a_workspace_member(
@@ -96,9 +96,9 @@ class AsyncWorkspaceMembersClient:
         Required scopes: `user_management:read`.
 
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.workspace_members.list_workspace_members()
@@ -126,9 +126,9 @@ class AsyncWorkspaceMembersClient:
         Parameters:
             - workspace_member_id: str.
         ---
-        from attio.client import Asyncattio_api
+        from attio.client import AsyncAttioClient
 
-        client = Asyncattio_api(
+        client = AsyncAttioClient(
             token="YOUR_TOKEN",
         )
         await client.workspace_members.get_a_workspace_member(
