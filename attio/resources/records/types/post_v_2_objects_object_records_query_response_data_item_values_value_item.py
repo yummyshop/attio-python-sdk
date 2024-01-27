@@ -67,7 +67,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_ActorRefere
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Checkbox(
@@ -78,7 +78,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Checkbox(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Currency(
@@ -89,7 +89,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Currency(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Date(
@@ -100,7 +100,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Date(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Domain(
@@ -111,7 +111,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Domain(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_EmailAddress(
@@ -122,7 +122,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_EmailAddres
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_RecordReference(
@@ -133,7 +133,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_RecordRefer
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Interaction(
@@ -144,7 +144,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Interaction
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Location(
@@ -155,7 +155,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Location(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Number(
@@ -166,7 +166,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Number(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_PersonalName(
@@ -177,7 +177,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_PersonalNam
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_PhoneNumber(
@@ -188,7 +188,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_PhoneNumber
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Status(
@@ -199,7 +199,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Status(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Rating(
@@ -210,7 +210,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Rating(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Select(
@@ -221,7 +221,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Select(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Text(
@@ -232,7 +232,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Text(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Timestamp(
@@ -243,7 +243,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Timestamp(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem = typing.Union[

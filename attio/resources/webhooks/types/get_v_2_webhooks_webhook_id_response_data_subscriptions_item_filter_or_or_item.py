@@ -22,7 +22,7 @@ class GetV2WebhooksWebhookIdResponseDataSubscriptionsItemFilterOrOrItem_Equals(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2WebhooksWebhookIdResponseDataSubscriptionsItemFilterOrOrItem_NotEquals(
@@ -33,7 +33,7 @@ class GetV2WebhooksWebhookIdResponseDataSubscriptionsItemFilterOrOrItem_NotEqual
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 GetV2WebhooksWebhookIdResponseDataSubscriptionsItemFilterOrOrItem = typing.Union[

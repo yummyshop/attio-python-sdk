@@ -67,7 +67,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_ActorReferenc
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Checkbox(
@@ -78,7 +78,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Checkbox(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Currency(
@@ -89,7 +89,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Currency(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Date(
@@ -100,7 +100,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Date(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Domain(
@@ -111,7 +111,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Domain(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_EmailAddress(
@@ -122,7 +122,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_EmailAddress(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_RecordReference(
@@ -133,7 +133,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_RecordReferen
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Interaction(
@@ -144,7 +144,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Interaction(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Location(
@@ -155,7 +155,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Location(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Number(
@@ -166,7 +166,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Number(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_PersonalName(
@@ -177,7 +177,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_PersonalName(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_PhoneNumber(
@@ -188,7 +188,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_PhoneNumber(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Status(
@@ -199,7 +199,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Status(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Rating(
@@ -210,7 +210,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Rating(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Select(
@@ -221,7 +221,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Select(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Text(
@@ -232,7 +232,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Text(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Timestamp(
@@ -243,7 +243,7 @@ class GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem_Timestamp(
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 GetV2ObjectsObjectRecordsRecordIdResponseDataValuesValueItem = typing.Union[

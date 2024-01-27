@@ -67,7 +67,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Acto
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Checkbox(
@@ -78,7 +78,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Chec
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Currency(
@@ -89,7 +89,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Curr
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Date(
@@ -100,7 +100,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Date
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Domain(
@@ -111,7 +111,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Doma
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_EmailAddress(
@@ -122,7 +122,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Emai
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_RecordReference(
@@ -133,7 +133,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Reco
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Interaction(
@@ -144,7 +144,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Inte
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Location(
@@ -155,7 +155,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Loca
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Number(
@@ -166,7 +166,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Numb
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_PersonalName(
@@ -177,7 +177,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Pers
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_PhoneNumber(
@@ -188,7 +188,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Phon
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Status(
@@ -199,7 +199,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Stat
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Rating(
@@ -210,7 +210,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Rati
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Select(
@@ -221,7 +221,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Sele
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Text(
@@ -232,7 +232,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Text
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Timestamp(
@@ -243,7 +243,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Time
     class Config:
         frozen = True
         
-        allow_population_by_field_name = True
+        populate_by_name = True
 
 
 GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem = typing.Union[
