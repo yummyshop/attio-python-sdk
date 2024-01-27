@@ -66,7 +66,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_ActorRefere
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -77,7 +77,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Checkbox(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -88,7 +88,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Currency(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -99,7 +99,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Date(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -110,7 +110,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Domain(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -121,7 +121,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_EmailAddres
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -132,7 +132,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_RecordRefer
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -143,7 +143,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Interaction
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -154,7 +154,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Location(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -165,7 +165,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Number(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -176,7 +176,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_PersonalNam
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -187,7 +187,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_PhoneNumber
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -198,7 +198,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Status(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -209,7 +209,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Rating(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -220,7 +220,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Select(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -231,7 +231,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Text(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -242,7 +242,7 @@ class PostV2ObjectsObjectRecordsQueryResponseDataItemValuesValueItem_Timestamp(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 

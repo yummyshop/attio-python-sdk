@@ -22,5 +22,5 @@ class PostV2WebhooksRequestDataSubscriptionsItemFilterAndAndItemEquals(pydantic.
 
     class Config:
         frozen = True
-        smart_union = True
+        
         json_encoders = {dt.datetime: serialize_datetime}

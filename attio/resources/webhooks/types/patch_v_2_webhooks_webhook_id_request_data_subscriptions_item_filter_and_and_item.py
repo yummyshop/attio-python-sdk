@@ -21,7 +21,7 @@ class PatchV2WebhooksWebhookIdRequestDataSubscriptionsItemFilterAndAndItem_Equal
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -32,7 +32,7 @@ class PatchV2WebhooksWebhookIdRequestDataSubscriptionsItemFilterAndAndItem_NotEq
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 

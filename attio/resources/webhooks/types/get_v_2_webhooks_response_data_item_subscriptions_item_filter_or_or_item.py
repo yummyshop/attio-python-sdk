@@ -21,7 +21,7 @@ class GetV2WebhooksResponseDataItemSubscriptionsItemFilterOrOrItem_Equals(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -32,7 +32,7 @@ class GetV2WebhooksResponseDataItemSubscriptionsItemFilterOrOrItem_NotEquals(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 

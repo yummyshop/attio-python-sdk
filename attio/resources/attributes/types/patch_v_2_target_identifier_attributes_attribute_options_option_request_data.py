@@ -24,5 +24,5 @@ class PatchV2TargetIdentifierAttributesAttributeOptionsOptionRequestData(pydanti
 
     class Config:
         frozen = True
-        smart_union = True
+        
         json_encoders = {dt.datetime: serialize_datetime}

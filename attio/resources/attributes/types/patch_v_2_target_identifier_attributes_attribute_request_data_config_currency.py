@@ -38,5 +38,5 @@ class PatchV2TargetIdentifierAttributesAttributeRequestDataConfigCurrency(pydant
 
     class Config:
         frozen = True
-        smart_union = True
+        
         json_encoders = {dt.datetime: serialize_datetime}

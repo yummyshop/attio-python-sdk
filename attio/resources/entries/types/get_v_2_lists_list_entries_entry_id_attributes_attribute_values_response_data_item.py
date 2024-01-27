@@ -66,7 +66,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Acto
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -77,7 +77,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Chec
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -88,7 +88,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Curr
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -99,7 +99,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Date
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -110,7 +110,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Doma
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -121,7 +121,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Emai
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -132,7 +132,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Reco
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -143,7 +143,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Inte
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -154,7 +154,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Loca
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -165,7 +165,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Numb
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -176,7 +176,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Pers
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -187,7 +187,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Phon
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -198,7 +198,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Stat
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -209,7 +209,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Rati
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -220,7 +220,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Sele
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -231,7 +231,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Text
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -242,7 +242,7 @@ class GetV2ListsListEntriesEntryIdAttributesAttributeValuesResponseDataItem_Time
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 

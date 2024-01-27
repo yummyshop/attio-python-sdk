@@ -66,7 +66,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_ActorReference(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -77,7 +77,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Checkbox(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -88,7 +88,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Currency(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -99,7 +99,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Date(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -110,7 +110,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Domain(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -121,7 +121,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_EmailAddress(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -132,7 +132,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_RecordReference(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -143,7 +143,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Interaction(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -154,7 +154,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Location(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -165,7 +165,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Number(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -176,7 +176,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_PersonalName(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -187,7 +187,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_PhoneNumber(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -198,7 +198,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Status(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -209,7 +209,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Rating(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -220,7 +220,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Select(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -231,7 +231,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Text(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
@@ -242,7 +242,7 @@ class PutV2ListsListEntriesResponseDataEntryValuesValueItem_Timestamp(
 
     class Config:
         frozen = True
-        smart_union = True
+        
         allow_population_by_field_name = True
 
 
