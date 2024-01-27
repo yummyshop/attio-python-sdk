@@ -88,7 +88,7 @@ class EntriesClient:
         _response = self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries/query"),
-            json=json.dumps(_request),
+            json=_request,
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
@@ -484,7 +484,7 @@ class AsyncEntriesClient:
         _response = await self._client_wrapper.httpx_client.request(
             "POST",
             urllib.parse.urljoin(f"{self._client_wrapper.get_base_url()}/", f"v2/lists/{list}/entries/query"),
-            json=json.dumps(_request),
+            json=_request,
             headers=self._client_wrapper.get_headers(),
             timeout=60,
         )
