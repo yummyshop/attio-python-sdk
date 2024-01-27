@@ -8,7 +8,7 @@ from ...core.client_wrapper import AsyncClientWrapper, SyncClientWrapper
 from .types.get_v_2_self_response import GetV2SelfResponse
 
 try:
-    import pydantic.v1 as pydantic  # type: ignore
+    import pydantic as pydantic  # type: ignore
 except ImportError:
     import pydantic  # type: ignore
 

@@ -15,7 +15,7 @@ from .types.post_v_2_comments_request_data import PostV2CommentsRequestData
 from .types.post_v_2_comments_response import PostV2CommentsResponse
 
 try:
-    import pydantic.v1 as pydantic  # type: ignore
+    import pydantic as pydantic  # type: ignore
 except ImportError:
     import pydantic  # type: ignore
 

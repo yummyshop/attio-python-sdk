@@ -3,7 +3,7 @@
 import datetime as dt
 import typing
 
-import pydantic.v1 as pydantic
+import pydantic as pydantic
 
 from ....core.datetime_utils import serialize_datetime
 from .post_v_2_objects_object_records_response_data_values_value_item_number_created_by_actor import (

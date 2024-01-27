@@ -16,7 +16,7 @@ from .types.post_v_2_notes_request_data import PostV2NotesRequestData
 from .types.post_v_2_notes_response import PostV2NotesResponse
 
 try:
-    import pydantic.v1 as pydantic  # type: ignore
+    import pydantic as pydantic  # type: ignore
 except ImportError:
     import pydantic  # type: ignore
 

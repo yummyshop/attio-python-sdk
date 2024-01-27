@@ -18,7 +18,7 @@ from .types.post_v_2_objects_request_data import PostV2ObjectsRequestData
 from .types.post_v_2_objects_response import PostV2ObjectsResponse
 
 try:
-    import pydantic.v1 as pydantic  # type: ignore
+    import pydantic as pydantic  # type: ignore
 except ImportError:
     import pydantic  # type: ignore
 

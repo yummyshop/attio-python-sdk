@@ -81,7 +81,7 @@ from .types.post_v_2_target_identifier_attributes_request_target import PostV2Ta
 from .types.post_v_2_target_identifier_attributes_response import PostV2TargetIdentifierAttributesResponse
 
 try:
-    import pydantic.v1 as pydantic  # type: ignore
+    import pydantic as pydantic  # type: ignore
 except ImportError:
     import pydantic  # type: ignore
 

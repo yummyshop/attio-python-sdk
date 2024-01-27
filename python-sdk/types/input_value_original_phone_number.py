@@ -3,7 +3,7 @@
 import datetime as dt
 import typing
 
-import pydantic.v1 as pydantic
+import pydantic as pydantic
 
 from ..core.datetime_utils import serialize_datetime
 from .input_value_original_phone_number_country_code import InputValueOriginalPhoneNumberCountryCode

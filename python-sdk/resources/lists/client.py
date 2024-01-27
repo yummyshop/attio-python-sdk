@@ -19,7 +19,7 @@ from .types.post_v_2_lists_request_data import PostV2ListsRequestData
 from .types.post_v_2_lists_response import PostV2ListsResponse
 
 try:
-    import pydantic.v1 as pydantic  # type: ignore
+    import pydantic as pydantic  # type: ignore
 except ImportError:
     import pydantic  # type: ignore
 

@@ -27,7 +27,7 @@ from .types.put_v_2_lists_list_entries_request_data import PutV2ListsListEntries
 from .types.put_v_2_lists_list_entries_response import PutV2ListsListEntriesResponse
 
 try:
-    import pydantic.v1 as pydantic  # type: ignore
+    import pydantic as pydantic  # type: ignore
 except ImportError:
     import pydantic  # type: ignore
 

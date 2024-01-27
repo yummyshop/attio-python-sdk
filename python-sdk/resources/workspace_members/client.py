@@ -11,7 +11,7 @@ from .types.get_v_2_workspace_members_response import GetV2WorkspaceMembersRespo
 from .types.get_v_2_workspace_members_workspace_member_id_response import GetV2WorkspaceMembersWorkspaceMemberIdResponse
 
 try:
-    import pydantic.v1 as pydantic  # type: ignore
+    import pydantic as pydantic  # type: ignore
 except ImportError:
     import pydantic  # type: ignore
 

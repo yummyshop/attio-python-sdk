@@ -3,7 +3,7 @@
 import datetime as dt
 import typing
 
-import pydantic.v1 as pydantic
+import pydantic as pydantic
 
 from ..core.datetime_utils import serialize_datetime
 from .task_assignees_item import TaskAssigneesItem

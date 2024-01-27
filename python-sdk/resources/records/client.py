@@ -32,7 +32,7 @@ from .types.put_v_2_objects_object_records_request_data import PutV2ObjectsObjec
 from .types.put_v_2_objects_object_records_response import PutV2ObjectsObjectRecordsResponse
 
 try:
-    import pydantic.v1 as pydantic  # type: ignore
+    import pydantic as pydantic  # type: ignore
 except ImportError:
     import pydantic  # type: ignore
 

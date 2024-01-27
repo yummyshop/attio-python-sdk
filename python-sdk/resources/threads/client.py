@@ -12,7 +12,7 @@ from .types.get_v_2_threads_response import GetV2ThreadsResponse
 from .types.get_v_2_threads_thread_id_response import GetV2ThreadsThreadIdResponse
 
 try:
-    import pydantic.v1 as pydantic  # type: ignore
+    import pydantic as pydantic  # type: ignore
 except ImportError:
     import pydantic  # type: ignore
 
