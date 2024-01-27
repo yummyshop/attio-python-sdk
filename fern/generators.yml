@@ -11,4 +11,4 @@ groups:
             version: v2
         output:
           location: local-file-system
-          path: ../attio-python-sdk
+          path: ../python

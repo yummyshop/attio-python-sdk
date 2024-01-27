@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "attio-sdk"
+name = "attio"
 version = "0.1"
 description = "Python SDK for interacting with the Attio API generated with Fern"
 authors = ["Yummy OÜ <martin@yummy.eu>"]
@@ -14,7 +14,7 @@ classifiers = [
 ]
 include = [ "LICENSE.txt", "README.md"]
 packages = [
-    { include = "attio-python-sdk" },
+    { include = "python" },
 ]
 
 [tool.poetry.dependencies]
